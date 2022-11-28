@@ -150,14 +150,6 @@
     transform: scale(1.1);
   }
   
-  .imgbg {
-    height: 490px;
-    position: absolute;
-    bottom: 40px;
-    left: 67%;
-    transform: translateX(-70%);
-  }
-  
   .conteudo-sobre {
     width: 80%;
     height:330px;
@@ -185,7 +177,6 @@
     font-weight: bold;
     font-size: 23px;
     line-height: 0px;
-  
   }
   
   .texto-sobre  p:nth-child(2) {
@@ -212,18 +203,7 @@
     font-family: calibri;
     background-color: #262525;
   }
-  .box1, .box2, .box3, .box4 {
-    width: 300px;
-    height: 320px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
-    display: flex;
-    justify-content: center;
-    align-items:  center;
-    flex-direction: column;
-  }
-
+ 
 .github-logo {
     width: 30px;
     height: 30px;
