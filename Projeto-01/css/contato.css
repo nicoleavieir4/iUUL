@@ -1,0 +1,143 @@
+* {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif, Arial;
+}
+
+body {
+  background-color: #f6f5f5;
+  margin-right: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.paginaAtual {
+  color:#fff;
+  background-color:#f6f5f5;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  padding: 0px 5%;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a {
+  margin: 30px;
+  font-family: myriad pro regular;
+  color: #505050;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.logo {
+  font-family: calibri;
+  color: #000000;
+  font-size: 22px;
+}
+
+.active {
+  font-weight: bold;
+  color: #2d2a2a;
+}
+
+.contato {
+  width: 50%;
+  height:150px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  display: flex;
+  margin: 8% auto 20px auto;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contacts-container {
+  max-width: 340px;
+  margin: 0 auto;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+form.contatos h2 {
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+form.contatos input {
+  width: 100%;
+  background: #252424;
+  border: none;
+  font-size: 14px;
+  border-radius: 15px;
+  padding: 10px 9px;
+  margin: 5px 0;
+  color: #000000;
+}
+
+form.contatos input::placeholder {
+  color: #ffffff;
+  font-size: 9px;
+}
+
+.form-button {
+  margin-top: 49px;
+}
+
+.form-button button:first-child {
+  background: #b2b2b2;
+  color: #f3f3f3;
+  border: none;
+  border-radius: 15px;
+  padding: 8px 30px;
+}
+
+.form-button button:last-child {
+  background: #848689;
+  padding: 8px 30px;
+  color: #f3f3f3;
+  border-radius: 15px;
+  border: none;
+}
+
+.form-button button {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.github-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.linkedin-logo {
+  width: 30px;
+  height: 30px;
+}
+
+footer {
+position: absolute;
+bottom: 0;
+background-color: rgb(255, 255, 255);
+color: #FFF;
+width: 100%;
+height: 100px;    
+text-align: center;
+line-height: 100px;
+}
