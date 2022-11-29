@@ -18,96 +18,99 @@ a {
 }
 
 .paginaAtual {
-  color:#fff;
-  background-color:#f6f5f5;
+  color: #fff;
+  background-color: #f6f5f5;
 }
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
   background-color: #ffffff;
-  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
   padding: 0px 5%;
+  margin-bottom: 40px;
 }
 
-nav ul{
+nav ul {
   display: flex;
 }
 
-nav ul li a{
+nav ul li a {
   margin: 30px;
   font-family: myriad pro regular;
   color: #505050;
   font-size: 15px;
   font-weight: 700;
 }
-.logo
-  {
-    font-family: calibri;
-    color: #000000;
-    font-size: 22px;
-  }
-  
-  .active
-  {
-    font-weight: bold;
-    color: #2d2a2a;
-  }
+.logo {
+  font-family: calibri;
+  color: #000000;
+  font-size: 22px;
+}
+
+.active {
+  font-weight: bold;
+  color: #2d2a2a;
+}
 
 .conteudo-box {
   display: flex;
   justify-content: space-between;
-  margin-left: 50px;
-    margin-right: 50px;
-  }
-  
-  .box1 span,
-  .box2 span,
-  .box3 span{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: calibri;
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  .box1 p:nth-child(2),
-  .box2 p:nth-child(2),
-  .box3 p:nth-child(2){
-    color: #141414;
-    font-family: calibri;
-    font-size: 23px;
-    line-height: 0px;
-  }
-  
-  .box1 p:nth-child(3),
-  .box2 p:nth-child(3),
-  .box3 p:nth-child(3){
-    font-family: calibri;
-    text-align: center;
-    width: 250px;
-    color: #8f8f8f;
-    margin: 0px 0px 20px 0px;
-  }
-  
-  .box1 button,
-  .box2 button,
-  .box3 button{
-    width: 100px;
-    height: 30px;
-    background-color: #ffffff;
-    border:none;
-    outline: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
+  width: 90%;
+  margin: 0 auto;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  width: 22.5%;
+}
+
+.box1 span,
+.box2 span,
+.box3 span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: calibri;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.box1 p:nth-child(2),
+.box2 p:nth-child(2),
+.box3 p:nth-child(2) {
+  color: #141414;
+  font-family: calibri;
+  font-size: 23px;
+}
+
+.box1 p:nth-child(3),
+.box2 p:nth-child(3),
+.box3 p:nth-child(3) {
+  font-family: calibri;
+  color: #8f8f8f;
+  margin: 0px 0px 20px 0px;
+}
+
+.box1 button,
+.box2 button,
+.box3 button {
+  width: 100px;
+  height: 30px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
 
 .github-logo {
   width: 30px;
@@ -120,13 +123,23 @@ nav ul li a{
 }
 
 footer {
-position: absolute;
-bottom: 0;
-background-color: rgb(255, 255, 255);
-color: #FFF;
-width: 100%;
-height: 100px;    
-text-align: center;
-line-height: 100px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
 }
 
+@media screen and (max-width: 768px) {
+  .conteudo-box {
+    display: block;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

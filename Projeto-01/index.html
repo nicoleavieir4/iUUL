@@ -1,118 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Meu Portifólio</title>
-</head>
-<body>
-        <section>
-            <nav>
-                <a href="#" class="logo">Nicole Alves Vieira</a>
+  </head>
+  <body>
+    <section>
+      <nav>
+        <a href="#" class="logo">Nicole Alves Vieira</a>
 
-                <ul>
-                    <li class="linkMenu paginaAtual"><a href="./index.html" class="active">Sobre mim</a></li>
-                    <li class="linkMenu"><a href="./formacao.html">Formação</a></li>
-                    <li class="linkMenu"><a href="./atuacao.html">Atuação profissional</a></li>
-                    <li class="linkMenu"><a href="./contato.html">Contato</a></li>
-                    <li ><a href="./portifolio.html">Portifólio</a></li>
-                </ul>
-            </nav>
+        <ul>
+          <li class="linkMenu paginaAtual">
+            <a href="./index.html" class="active">Sobre mim</a>
+          </li>
+          <li class="linkMenu"><a href="./formacao.html">Formação</a></li>
+          <li class="linkMenu">
+            <a href="./atuacao.html">Atuação profissional</a>
+          </li>
+          <li class="linkMenu"><a href="./contato.html">Contato</a></li>
+          <li><a href="./portifolio.html">Portifólio</a></li>
+        </ul>
+      </nav>
 
-            <div class="content">
-
-                <h3>Bem-Vindos!!!</h3>
-                <h3 class="typedtext"></h3>
-                <script>
-                   
-function typingEffect() {
-    const contactTexts = shuffleArray(['Olá! Eu sou a Nicole!!!', 'Desenvolvedora Front-end!😄', 'Seja bem-vindo(a) ao meu Portifólio!', 'Venha me conhecer!🤗']);
-    const typedtext = document.getElementsByClassName("typedtext")[0];
-    let removing = false;
-    let idx = char = 0;
-
-    setInterval(() => { 
-
-        if (char < contactTexts[idx].length) typedtext.innerHTML += contactTexts[idx][char];
-
-        if (char == contactTexts[idx].length + 15) removing = true;
-
-        if (removing) typedtext.innerHTML = typedtext.innerHTML.substring(0, typedtext.innerHTML.length - 1);
-
-        char++;
-
-        if (typedtext.innerHTML.length === 0) {
-
-            if (idx === contactTexts.length - 1) idx = 0
-            else idx++;
-
-            char = 0; 
-            removing = false; 
-        }
-
-    }, 150); 
-
-}
-typingEffect();
-function shuffleArray(array) {
-    let currentIndex = array.length,
-        temporaryValue, randomIndex;
-
-    while (0 !== currentIndex) {
-
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
-    }
-
-    return array;
-}
-
-                   </script>
-
-</section>
+      <div class="content">
+        <h3>Bem-Vindos!!!</h3>
+        <h3 class="typedtext"></h3>
+      </div>
+    </section>
 
     <div class="conteudo-sobre">
+      <img src="./img/nicoleperfil.jpeg" />
 
-    <img src="./img/nicoleperfil.jpeg">
-
-        <div class="texto-sobre">
-
+      <div class="texto-sobre">
         <p>Sobre</p>
         <p>Residente em Front-end</p>
 
-        <p>Olá! Meu nome é Nicole, mas as pessoas me chamam de Ni ou Nic. Tenho 21 anos e me formo em Gestäo Empresarial em Junho/23.
-            Atualmente presto serviços como suporte em uma PSP e trabalho com as ferramentas/softwares MySQL, postgres, jira, postman.
+        <p>
+          Olá! Meu nome é Nicole, mas as pessoas me chamam de Ni ou Nic. Tenho
+          21 anos e me formo em Gestäo Empresarial em Junho/23. Atualmente
+          presto serviços como suporte em uma PSP e trabalho com as
+          ferramentas/softwares MySQL, postgres, jira, postman.
         </p>
 
-        <a href="https://docs.google.com/document/d/1cIwalXyB_RcT9tqJWLePrpgy7d9f0dkS/edit?usp=sharing&ouid=112138475453094994566&rtpof=true&sd=true" target="_blank"><button class="btn1"> Meu currículo</button></a>
-    
+        <a
+          href="https://docs.google.com/document/d/1cIwalXyB_RcT9tqJWLePrpgy7d9f0dkS/edit?usp=sharing&ouid=112138475453094994566&rtpof=true&sd=true"
+          target="_blank"
+          ><button class="btn1">Meu currículo</button></a
+        >
+      </div>
     </div>
-        </div>
 
-            </div>
+    <footer>
+      <div class="github-links">
+        <a href="https://github.com/nicoleavieir4" target="_blank"
+          ><img class="github-logo" src="./img/github.png" alt=""
+        /></a>
+      </div>
+      <div class="linkedin-links">
+        <a href="https://www.linkedin.com/in/nicoleavieira/" target="_blank"
+          ><img class="linkedin-logo" src="./img/linkedin.png" alt=""
+        /></a>
+      </div>
+    </footer>
 
-           
-            </div>
+    <script>
+      function typingEffect() {
+        const contactTexts = shuffleArray([
+          "Olá! Eu sou a Nicole!!!",
+          "Desenvolvedora Front-end!😄",
+          "Seja bem-vindo(a) ao meu Portifólio!",
+          "Venha me conhecer!🤗",
+        ]);
+        const typedtext = document.getElementsByClassName("typedtext")[0];
+        let removing = false;
+        let idx = (char = 0);
 
-            <footer>
-                <div class="logo">
-                    <div class="github-links">
-                        <a href="https://github.com/nicoleavieir4" target="_blank"><img class="github-logo" src="./img/github.png" alt=""></a>
-        
-                    </div>
-                    <div class="linkedin-links">
-                        <a href="https://www.linkedin.com/in/nicoleavieira/" target="_blank"><img class="linkedin-logo" src="./img/linkedin.png" alt=""></a>        
-                    </div>
-                </div>
-            </footer>
+        setInterval(() => {
+          if (char < contactTexts[idx].length)
+            typedtext.innerHTML += contactTexts[idx][char];
 
-        </div>
+          if (char == contactTexts[idx].length + 15) removing = true;
 
-</body>
+          if (removing)
+            typedtext.innerHTML = typedtext.innerHTML.substring(
+              0,
+              typedtext.innerHTML.length - 1
+            );
+
+          char++;
+
+          if (typedtext.innerHTML.length === 0) {
+            if (idx === contactTexts.length - 1) idx = 0;
+            else idx++;
+
+            char = 0;
+            removing = false;
+          }
+        }, 150);
+      }
+      typingEffect();
+      function shuffleArray(array) {
+        let currentIndex = array.length,
+          temporaryValue,
+          randomIndex;
+
+        while (0 !== currentIndex) {
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex -= 1;
+
+          temporaryValue = array[currentIndex];
+          array[currentIndex] = array[randomIndex];
+          array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+      }
+    </script>
+  </body>
 </html>
